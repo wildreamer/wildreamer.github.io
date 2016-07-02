@@ -84,15 +84,50 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="wildreamer 的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="用到的工具汇总
+fftw-3.3.4-dll32.zip
+
+整体的思路和流程
+用下载的 .dll 文件生成可供静态连接的 .lib 文件。这样可以直接添加到工程中，方便调用。
+在 VS2010 中配置 FFTW 的包含路径、静态链接库路径和具体文件。
+在所创建的工程中添加FFTW的 .dll 文件。
+测试验证。
+注意事项。
+
+具体步骤生成 .lib 文件因为 FFTW 的 dll 在发布时不提供">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FFTW的安装以及在VS2010中的配置">
+<meta property="og:url" content="http://yoursite.com/2016/07/02/FFTW的安装以及在VS2010中的配置/index.html">
 <meta property="og:site_name" content="wildreamer 的博客">
-<meta property="og:description">
+<meta property="og:description" content="用到的工具汇总
+fftw-3.3.4-dll32.zip
+
+整体的思路和流程
+用下载的 .dll 文件生成可供静态连接的 .lib 文件。这样可以直接添加到工程中，方便调用。
+在 VS2010 中配置 FFTW 的包含路径、静态链接库路径和具体文件。
+在所创建的工程中添加FFTW的 .dll 文件。
+测试验证。
+注意事项。
+
+具体步骤生成 .lib 文件因为 FFTW 的 dll 在发布时不提供">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F03%2F01.png&fhash=be37e92b9de860c4e642fe16a51fa44a7a35ac73&dt=40.d15aeb4f739e7b3a649075944d238883&v=1.0.1&rtick=14674770484677&open_app_id=0&devtype=web&sign=6d8bdd9d717657bcd5044e942712c29a&">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F03%2F02.png&fhash=9ea84d23f769c96890e2283b0acaa175697c33eb&dt=40.e87c4b0b80ce8f2039ba3de703d79222&v=1.0.1&rtick=14674770482824&open_app_id=0&devtype=web&sign=825c432c05adf59308077e32e3291476&">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F03%2F03.png&fhash=8e953b2591ae2e040e895832e71344040377f7d4&dt=40.2f2f62ada06d12aa7e4d9ddb220deb1f&v=1.0.1&rtick=14674770488274&open_app_id=0&devtype=web&sign=57ff3e3fccd006c2bdaca9ba8130f715&">
+<meta property="og:updated_time" content="2016-07-02T16:40:37.049Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wildreamer 的博客">
-<meta name="twitter:description">
+<meta name="twitter:title" content="FFTW的安装以及在VS2010中的配置">
+<meta name="twitter:description" content="用到的工具汇总
+fftw-3.3.4-dll32.zip
+
+整体的思路和流程
+用下载的 .dll 文件生成可供静态连接的 .lib 文件。这样可以直接添加到工程中，方便调用。
+在 VS2010 中配置 FFTW 的包含路径、静态链接库路径和具体文件。
+在所创建的工程中添加FFTW的 .dll 文件。
+测试验证。
+注意事项。
+
+具体步骤生成 .lib 文件因为 FFTW 的 dll 在发布时不提供">
+<meta name="twitter:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F03%2F01.png&fhash=be37e92b9de860c4e642fe16a51fa44a7a35ac73&dt=40.d15aeb4f739e7b3a649075944d238883&v=1.0.1&rtick=14674770484677&open_app_id=0&devtype=web&sign=6d8bdd9d717657bcd5044e942712c29a&">
 
 
 
@@ -113,9 +148,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/07/02/FFTW的安装以及在VS2010中的配置/"/>
 
-  <title> wildreamer 的博客 </title>
+  <title> FFTW的安装以及在VS2010中的配置 | wildreamer 的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +171,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,10 +270,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/07/02/FFTW的安装以及在VS2010中的配置/" itemprop="url">
-                  FFTW的安装以及在VS2010中的配置
-                </a>
+                FFTW的安装以及在VS2010中的配置
               
             
           </h1>
@@ -280,9 +310,7 @@
       
 
       
-        
-          
-            <h2 id="用到的工具汇总"><a href="#用到的工具汇总" class="headerlink" title="用到的工具汇总"></a>用到的工具汇总</h2><ol>
+        <h2 id="用到的工具汇总"><a href="#用到的工具汇总" class="headerlink" title="用到的工具汇总"></a>用到的工具汇总</h2><ol>
 <li><a href="http://www.fftw.org/download.html" target="_blank" rel="external">fftw-3.3.4-dll32.zip</a></li>
 </ol>
 <h2 id="整体的思路和流程"><a href="#整体的思路和流程" class="headerlink" title="整体的思路和流程"></a>整体的思路和流程</h2><ol>
@@ -335,16 +363,19 @@
 <li>个人博客：<a href="http://blog.csdn.net/congwulong/article/details/7576012" target="_blank" rel="external">http://blog.csdn.net/congwulong/article/details/7576012</a></li>
 </ul>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -352,343 +383,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/06/30/mingw的安装以及在codeblocks中的设置/" rel="next" title="MinGW的安装以及在codeblocks中的设置">
+                <i class="fa fa-chevron-left"></i> MinGW的安装以及在codeblocks中的设置
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/06/30/mingw的安装以及在codeblocks中的设置/" itemprop="url">
-                  MinGW的安装以及在codeblocks中的设置
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-30T09:37:05+08:00" content="2016-06-30">
-              2016-06-30
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>本文参考资料：</p>
-<ul>
-<li><a href="http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html" target="_blank" rel="external">http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html</a></li>
-</ul>
-<p>MinGW，是Minimalist GNUfor Windows的缩写。</p>
-<h2 id="整体的思路和流程"><a href="#整体的思路和流程" class="headerlink" title=" 整体的思路和流程 "></a><strong> 整体的思路和流程 </strong></h2><ol>
-<li>安装MinGW</li>
-<li>配置环境变量并验证安装是否成功</li>
-<li>在CodeBlocks中配置编译器和调试器</li>
-</ol>
-<h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title=" 详细步骤 "></a><strong> 详细步骤 </strong></h2><h3 id="安装MinGW"><a href="#安装MinGW" class="headerlink" title="安装MinGW"></a>安装MinGW</h3><p>下载安装MinGW，在Package列表中选中想要安装的对象，右击，做好标记。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&amp;fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&amp;dt=40.045a1f760c0811f97c698ab384891268&amp;v=1.0.1&amp;rtick=14674589022097&amp;open_app_id=0&amp;devtype=web&amp;sign=2a4adf86909282f5eab6d8ebbb012c6c&amp;" alt=""></p>
-<p>在菜单栏中，选择installation，Apply Changes。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-02.PNG&amp;fhash=69bdd06f86b0f44429da47c9049542368164ed18&amp;dt=40.ec4332eec2302e7c6bc0be8d6256548c&amp;v=1.0.1&amp;rtick=14674589028441&amp;open_app_id=0&amp;devtype=web&amp;sign=b29e2d8d8d7f41263a71125417e84b0a&amp;" alt=""></p>
-<h3 id="配置环境变量并验证"><a href="#配置环境变量并验证" class="headerlink" title="配置环境变量并验证"></a>配置环境变量并验证</h3><p>把MinGW安装目录的bin目录添加到环境变量中。<br>添加之后，在cmd中输入 gcc –v。如果出现以下画面，则说明安装成功。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-03.PNG&amp;fhash=c762bfd36439e7b8ecb6aa54faff5a22ac95f4ad&amp;dt=40.e7f18eead4a10ae686bac843ab826ae7&amp;v=1.0.1&amp;rtick=14674589023094&amp;open_app_id=0&amp;devtype=web&amp;sign=8b9d2def18f376d3cede5e97408f62c8&amp;" alt=""></p>
-<h3 id="在CodeBlocks中配置编译器和调试器"><a href="#在CodeBlocks中配置编译器和调试器" class="headerlink" title="在CodeBlocks中配置编译器和调试器"></a>在CodeBlocks中配置编译器和调试器</h3><p>配置编译器：settings，complier。<br>选中GNU GCC Complier，Reset Defaults。这样一般即可自动检测出MinGW的安装目录。<br>如果没有检测出来，可以继续点击下面的 Auto Detect。<br>还没检测出来的话，那我们就手动进行配置<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-04.PNG&amp;fhash=38dd8137fa6c4608f6bd804cefd241ecb360272e&amp;dt=40.e7a156bf9d513d801bf333529266ce24&amp;v=1.0.1&amp;rtick=14674589028037&amp;open_app_id=0&amp;devtype=web&amp;sign=b13ac3c5517e3166b1256cbe27d1fa3e&amp;" alt=""></p>
-<p>配置调试器：settings，debugger。<br>选中MinGW里，bin目录下的gdb.exe。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-05.PNG&amp;fhash=02a5664222834c49503431212dd8e27b0002abd6&amp;dt=40.5d09ff2255dca97d86333ebfdd013985&amp;v=1.0.1&amp;rtick=14674598513945&amp;open_app_id=0&amp;devtype=web&amp;sign=8f76f00ea4eaab97241132da6a4bd31c&amp;" alt=""></p>
-<p>所有工作完成，编写一个程序测试一下吧！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/19/5分钟搭建个人博客/" itemprop="url">
-                  在GitHub上利用Hexo搭建个人博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-19T01:52:37+08:00" content="2016-06-19">
-              2016-06-19
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>原文来自：<a href="http://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="external">http://www.jianshu.com/p/4eaddcbe4d12</a></p>
-<p>本文是在对原文提供的步骤实践成功之后，做一下总结和梳理。</p>
-<h2 id="整体的思路和流程"><a href="#整体的思路和流程" class="headerlink" title=" 整体的思路和流程 "></a><strong> 整体的思路和流程 </strong></h2><ol>
-<li>创建 Github 域名和空间</li>
-<li>安装博客框架 Hexo</li>
-<li>对博客的初始化和自定义配置</li>
-<li>写文章、发布和访问</li>
-</ol>
-<h2 id="用到的工具汇总"><a href="#用到的工具汇总" class="headerlink" title=" 用到的工具汇总 "></a><strong> 用到的工具汇总 </strong></h2><ol>
-<li>全世界最大的同性交友网站 <a href="https://github.com/" target="_blank" rel="external">GitHub</a></li>
-<li>版本控制工具 <a href="https://git-scm.com/" target="_blank" rel="external">Git</a></li>
-<li>Node.js的版本管理工具 nvm</li>
-<li>Node.js</li>
-</ol>
-<h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title=" 详细步骤 "></a><strong> 详细步骤 </strong></h2><h3 id="注册GitHub域名和空间"><a href="#注册GitHub域名和空间" class="headerlink" title="注册GitHub域名和空间"></a>注册GitHub域名和空间</h3><h3 id="依次安装Git，Nodejs，Hexo"><a href="#依次安装Git，Nodejs，Hexo" class="headerlink" title="依次安装Git，Nodejs，Hexo"></a>依次安装Git，Nodejs，Hexo</h3><h3 id="编写和发布"><a href="#编写和发布" class="headerlink" title="编写和发布"></a>编写和发布</h3><h4 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h4><p>在username.github.io/source/_posts下，执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<h4 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>测试服务启动，你可以在浏览器中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 预览。</p>
-<h4 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="访问"><a href="#访问" class="headerlink" title="访问"></a>访问</h3><p>在浏览器中输入 <a href="http://wildreamer.github.io/" target="_blank" rel="external">http://wildreamer.github.io/</a> 就可以访问了。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/11/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-11T12:55:45+08:00" content="2016-06-11">
-              2016-06-11
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -696,6 +416,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -715,8 +439,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -759,6 +492,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#用到的工具汇总"><span class="nav-number">1.</span> <span class="nav-text">用到的工具汇总</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#整体的思路和流程"><span class="nav-number">2.</span> <span class="nav-text">整体的思路和流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#具体步骤"><span class="nav-number">3.</span> <span class="nav-text">具体步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成-lib-文件"><span class="nav-number">3.1.</span> <span class="nav-text">生成 .lib 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置FFTW的包含路径、静态链接库路径和具体文件"><span class="nav-number">3.2.</span> <span class="nav-text">配置FFTW的包含路径、静态链接库路径和具体文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在工程中添加-dll-文件"><span class="nav-number">3.3.</span> <span class="nav-text">在工程中添加 .dll 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测试验证"><span class="nav-number">3.4.</span> <span class="nav-text">测试验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">3.5.</span> <span class="nav-text">注意事项</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -855,6 +599,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

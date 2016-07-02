@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="环境搭建,实践教程," />
 
 
 
@@ -84,7 +84,7 @@
 
 
 
-<meta name="description" content="MinGW的安装以及在codeblocks中的设置本文参考资料：
+<meta name="description" content="本文参考资料：
 
 http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html
 
@@ -94,12 +94,12 @@ MinGW，是Minimalist GNUfor Windows的缩写。
 配置环境变量并验证安装是否成功
 在CodeBlocks中配置编译器和调试器
 
- 详细步骤">
+ 详细步骤 安装MinGW下载安装MinGW，在Package列">
 <meta property="og:type" content="article">
-<meta property="og:title" content="wildreamer 的博客">
+<meta property="og:title" content="MinGW的安装以及在codeblocks中的设置">
 <meta property="og:url" content="http://yoursite.com/2016/06/30/mingw的安装以及在codeblocks中的设置/index.html">
 <meta property="og:site_name" content="wildreamer 的博客">
-<meta property="og:description" content="MinGW的安装以及在codeblocks中的设置本文参考资料：
+<meta property="og:description" content="本文参考资料：
 
 http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html
 
@@ -109,15 +109,16 @@ MinGW，是Minimalist GNUfor Windows的缩写。
 配置环境变量并验证安装是否成功
 在CodeBlocks中配置编译器和调试器
 
- 详细步骤">
+ 详细步骤 安装MinGW下载安装MinGW，在Package列">
 <meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&dt=40.045a1f760c0811f97c698ab384891268&v=1.0.1&rtick=14674589022097&open_app_id=0&devtype=web&sign=2a4adf86909282f5eab6d8ebbb012c6c&">
 <meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-02.PNG&fhash=69bdd06f86b0f44429da47c9049542368164ed18&dt=40.ec4332eec2302e7c6bc0be8d6256548c&v=1.0.1&rtick=14674589028441&open_app_id=0&devtype=web&sign=b29e2d8d8d7f41263a71125417e84b0a&">
 <meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-03.PNG&fhash=c762bfd36439e7b8ecb6aa54faff5a22ac95f4ad&dt=40.e7f18eead4a10ae686bac843ab826ae7&v=1.0.1&rtick=14674589023094&open_app_id=0&devtype=web&sign=8b9d2def18f376d3cede5e97408f62c8&">
 <meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-04.PNG&fhash=38dd8137fa6c4608f6bd804cefd241ecb360272e&dt=40.e7a156bf9d513d801bf333529266ce24&v=1.0.1&rtick=14674589028037&open_app_id=0&devtype=web&sign=b13ac3c5517e3166b1256cbe27d1fa3e&">
-<meta property="og:updated_time" content="2016-07-02T11:29:42.595Z">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-05.PNG&fhash=02a5664222834c49503431212dd8e27b0002abd6&dt=40.5d09ff2255dca97d86333ebfdd013985&v=1.0.1&rtick=14674598513945&open_app_id=0&devtype=web&sign=8f76f00ea4eaab97241132da6a4bd31c&">
+<meta property="og:updated_time" content="2016-07-02T11:45:07.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wildreamer 的博客">
-<meta name="twitter:description" content="MinGW的安装以及在codeblocks中的设置本文参考资料：
+<meta name="twitter:title" content="MinGW的安装以及在codeblocks中的设置">
+<meta name="twitter:description" content="本文参考资料：
 
 http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html
 
@@ -127,7 +128,7 @@ MinGW，是Minimalist GNUfor Windows的缩写。
 配置环境变量并验证安装是否成功
 在CodeBlocks中配置编译器和调试器
 
- 详细步骤">
+ 详细步骤 安装MinGW下载安装MinGW，在Package列">
 <meta name="twitter:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&dt=40.045a1f760c0811f97c698ab384891268&v=1.0.1&rtick=14674589022097&open_app_id=0&devtype=web&sign=2a4adf86909282f5eab6d8ebbb012c6c&">
 
 
@@ -151,7 +152,7 @@ MinGW，是Minimalist GNUfor Windows的缩写。
 
   <link rel="canonical" href="http://yoursite.com/2016/06/30/mingw的安装以及在codeblocks中的设置/"/>
 
-  <title>  | wildreamer 的博客 </title>
+  <title> MinGW的安装以及在codeblocks中的设置 | wildreamer 的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -271,7 +272,7 @@ MinGW，是Minimalist GNUfor Windows的缩写。
             
             
               
-                
+                MinGW的安装以及在codeblocks中的设置
               
             
           </h1>
@@ -311,7 +312,7 @@ MinGW，是Minimalist GNUfor Windows的缩写。
       
 
       
-        <h1 id="MinGW的安装以及在codeblocks中的设置"><a href="#MinGW的安装以及在codeblocks中的设置" class="headerlink" title="MinGW的安装以及在codeblocks中的设置"></a>MinGW的安装以及在codeblocks中的设置</h1><p>本文参考资料：</p>
+        <p>本文参考资料：</p>
 <ul>
 <li><a href="http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html" target="_blank" rel="external">http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html</a></li>
 </ul>
@@ -321,10 +322,12 @@ MinGW，是Minimalist GNUfor Windows的缩写。
 <li>配置环境变量并验证安装是否成功</li>
 <li>在CodeBlocks中配置编译器和调试器</li>
 </ol>
-<h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title=" 详细步骤 "></a><strong> 详细步骤 </strong></h2><h3 id="安装MinGW"><a href="#安装MinGW" class="headerlink" title=" 安装MinGW "></a><strong> 安装MinGW </strong></h3><p>下载安装MinGW，在Package列表中选中想要安装的对象，右击，做好标记。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&amp;fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&amp;dt=40.045a1f760c0811f97c698ab384891268&amp;v=1.0.1&amp;rtick=14674589022097&amp;open_app_id=0&amp;devtype=web&amp;sign=2a4adf86909282f5eab6d8ebbb012c6c&amp;" alt=""></p>
+<h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title=" 详细步骤 "></a><strong> 详细步骤 </strong></h2><h3 id="安装MinGW"><a href="#安装MinGW" class="headerlink" title="安装MinGW"></a>安装MinGW</h3><p>下载安装MinGW，在Package列表中选中想要安装的对象，右击，做好标记。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&amp;fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&amp;dt=40.045a1f760c0811f97c698ab384891268&amp;v=1.0.1&amp;rtick=14674589022097&amp;open_app_id=0&amp;devtype=web&amp;sign=2a4adf86909282f5eab6d8ebbb012c6c&amp;" alt=""></p>
 <p>在菜单栏中，选择installation，Apply Changes。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-02.PNG&amp;fhash=69bdd06f86b0f44429da47c9049542368164ed18&amp;dt=40.ec4332eec2302e7c6bc0be8d6256548c&amp;v=1.0.1&amp;rtick=14674589028441&amp;open_app_id=0&amp;devtype=web&amp;sign=b29e2d8d8d7f41263a71125417e84b0a&amp;" alt=""></p>
-<h3 id="配置环境变量并验证"><a href="#配置环境变量并验证" class="headerlink" title=" 配置环境变量并验证 "></a><strong> 配置环境变量并验证 </strong></h3><p>把MinGW安装目录的bin目录添加到环境变量中。<br>添加之后，在cmd中输入 gcc –v。如果出现以下画面，则说明安装成功。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-03.PNG&amp;fhash=c762bfd36439e7b8ecb6aa54faff5a22ac95f4ad&amp;dt=40.e7f18eead4a10ae686bac843ab826ae7&amp;v=1.0.1&amp;rtick=14674589023094&amp;open_app_id=0&amp;devtype=web&amp;sign=8b9d2def18f376d3cede5e97408f62c8&amp;" alt=""></p>
-<h3 id="在CodeBlocks中配置编译器和调试器"><a href="#在CodeBlocks中配置编译器和调试器" class="headerlink" title=" 在CodeBlocks中配置编译器和调试器 "></a><strong> 在CodeBlocks中配置编译器和调试器 </strong></h3><p>配置编译器：settings，complier。<br>选中GNU GCC Complier，Reset Defaults。这样一般即可自动检测出MinGW的安装目录。<br>如果没有检测出来，可以继续点击下面的 Auto Detect。<br>还没检测出来的话，那我们就手动进行配置<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-04.PNG&amp;fhash=38dd8137fa6c4608f6bd804cefd241ecb360272e&amp;dt=40.e7a156bf9d513d801bf333529266ce24&amp;v=1.0.1&amp;rtick=14674589028037&amp;open_app_id=0&amp;devtype=web&amp;sign=b13ac3c5517e3166b1256cbe27d1fa3e&amp;" alt=""></p>
+<h3 id="配置环境变量并验证"><a href="#配置环境变量并验证" class="headerlink" title="配置环境变量并验证"></a>配置环境变量并验证</h3><p>把MinGW安装目录的bin目录添加到环境变量中。<br>添加之后，在cmd中输入 gcc –v。如果出现以下画面，则说明安装成功。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-03.PNG&amp;fhash=c762bfd36439e7b8ecb6aa54faff5a22ac95f4ad&amp;dt=40.e7f18eead4a10ae686bac843ab826ae7&amp;v=1.0.1&amp;rtick=14674589023094&amp;open_app_id=0&amp;devtype=web&amp;sign=8b9d2def18f376d3cede5e97408f62c8&amp;" alt=""></p>
+<h3 id="在CodeBlocks中配置编译器和调试器"><a href="#在CodeBlocks中配置编译器和调试器" class="headerlink" title="在CodeBlocks中配置编译器和调试器"></a>在CodeBlocks中配置编译器和调试器</h3><p>配置编译器：settings，complier。<br>选中GNU GCC Complier，Reset Defaults。这样一般即可自动检测出MinGW的安装目录。<br>如果没有检测出来，可以继续点击下面的 Auto Detect。<br>还没检测出来的话，那我们就手动进行配置<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-04.PNG&amp;fhash=38dd8137fa6c4608f6bd804cefd241ecb360272e&amp;dt=40.e7a156bf9d513d801bf333529266ce24&amp;v=1.0.1&amp;rtick=14674589028037&amp;open_app_id=0&amp;devtype=web&amp;sign=b13ac3c5517e3166b1256cbe27d1fa3e&amp;" alt=""></p>
+<p>配置调试器：settings，debugger。<br>选中MinGW里，bin目录下的gdb.exe。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-05.PNG&amp;fhash=02a5664222834c49503431212dd8e27b0002abd6&amp;dt=40.5d09ff2255dca97d86333ebfdd013985&amp;v=1.0.1&amp;rtick=14674598513945&amp;open_app_id=0&amp;devtype=web&amp;sign=8f76f00ea4eaab97241132da6a4bd31c&amp;" alt=""></p>
+<p>所有工作完成，编写一个程序测试一下吧！</p>
 
       
     </div>
@@ -344,6 +347,14 @@ MinGW，是Minimalist GNUfor Windows的缩写。
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/环境搭建/" rel="tag">#环境搭建</a>
+          
+            <a href="/tags/实践教程/" rel="tag">#实践教程</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
@@ -356,6 +367,10 @@ MinGW，是Minimalist GNUfor Windows的缩写。
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/07/02/FFTW的安装以及在VS2010中的配置/" rel="prev" title="FFTW的安装以及在VS2010中的配置">
+                FFTW的安装以及在VS2010中的配置 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -423,7 +438,7 @@ MinGW，是Minimalist GNUfor Windows的缩写。
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -462,7 +477,7 @@ MinGW，是Minimalist GNUfor Windows的缩写。
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MinGW的安装以及在codeblocks中的设置"><span class="nav-number">1.</span> <span class="nav-text">MinGW的安装以及在codeblocks中的设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整体的思路和流程"><span class="nav-number">1.1.</span> <span class="nav-text"> 整体的思路和流程 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详细步骤"><span class="nav-number">1.2.</span> <span class="nav-text"> 详细步骤 </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MinGW"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 安装MinGW </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置环境变量并验证"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 配置环境变量并验证 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在CodeBlocks中配置编译器和调试器"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 在CodeBlocks中配置编译器和调试器 </span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#整体的思路和流程"><span class="nav-number">1.</span> <span class="nav-text"> 整体的思路和流程 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详细步骤"><span class="nav-number">2.</span> <span class="nav-text"> 详细步骤 </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MinGW"><span class="nav-number">2.1.</span> <span class="nav-text">安装MinGW</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置环境变量并验证"><span class="nav-number">2.2.</span> <span class="nav-text">配置环境变量并验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在CodeBlocks中配置编译器和调试器"><span class="nav-number">2.3.</span> <span class="nav-text">在CodeBlocks中配置编译器和调试器</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
