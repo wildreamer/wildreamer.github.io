@@ -84,15 +84,51 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
+<meta name="description" content="MinGW的安装以及在codeblocks中的设置本文参考资料：
+
+http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html
+
+MinGW，是Minimalist GNUfor Windows的缩写。
+ 整体的思路和流程 
+安装MinGW
+配置环境变量并验证安装是否成功
+在CodeBlocks中配置编译器和调试器
+
+ 详细步骤">
+<meta property="og:type" content="article">
 <meta property="og:title" content="wildreamer 的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/06/30/mingw的安装以及在codeblocks中的设置/index.html">
 <meta property="og:site_name" content="wildreamer 的博客">
-<meta property="og:description">
+<meta property="og:description" content="MinGW的安装以及在codeblocks中的设置本文参考资料：
+
+http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html
+
+MinGW，是Minimalist GNUfor Windows的缩写。
+ 整体的思路和流程 
+安装MinGW
+配置环境变量并验证安装是否成功
+在CodeBlocks中配置编译器和调试器
+
+ 详细步骤">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&dt=40.045a1f760c0811f97c698ab384891268&v=1.0.1&rtick=14674589022097&open_app_id=0&devtype=web&sign=2a4adf86909282f5eab6d8ebbb012c6c&">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-02.PNG&fhash=69bdd06f86b0f44429da47c9049542368164ed18&dt=40.ec4332eec2302e7c6bc0be8d6256548c&v=1.0.1&rtick=14674589028441&open_app_id=0&devtype=web&sign=b29e2d8d8d7f41263a71125417e84b0a&">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-03.PNG&fhash=c762bfd36439e7b8ecb6aa54faff5a22ac95f4ad&dt=40.e7f18eead4a10ae686bac843ab826ae7&v=1.0.1&rtick=14674589023094&open_app_id=0&devtype=web&sign=8b9d2def18f376d3cede5e97408f62c8&">
+<meta property="og:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-04.PNG&fhash=38dd8137fa6c4608f6bd804cefd241ecb360272e&dt=40.e7a156bf9d513d801bf333529266ce24&v=1.0.1&rtick=14674589028037&open_app_id=0&devtype=web&sign=b13ac3c5517e3166b1256cbe27d1fa3e&">
+<meta property="og:updated_time" content="2016-07-02T11:29:42.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wildreamer 的博客">
-<meta name="twitter:description">
+<meta name="twitter:description" content="MinGW的安装以及在codeblocks中的设置本文参考资料：
+
+http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html
+
+MinGW，是Minimalist GNUfor Windows的缩写。
+ 整体的思路和流程 
+安装MinGW
+配置环境变量并验证安装是否成功
+在CodeBlocks中配置编译器和调试器
+
+ 详细步骤">
+<meta name="twitter:image" content="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&qid=37674786&fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-01.PNG&fhash=694f7a64070cb0c1d191c83e913e0ea7ba9eb3bb&dt=40.045a1f760c0811f97c698ab384891268&v=1.0.1&rtick=14674589022097&open_app_id=0&devtype=web&sign=2a4adf86909282f5eab6d8ebbb012c6c&">
 
 
 
@@ -113,9 +149,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/06/30/mingw的安装以及在codeblocks中的设置/"/>
 
-  <title> wildreamer 的博客 </title>
+  <title>  | wildreamer 的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +172,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +249,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -238,9 +272,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/06/30/mingw的安装以及在codeblocks中的设置/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -280,9 +311,7 @@
       
 
       
-        
-          
-            <h1 id="MinGW的安装以及在codeblocks中的设置"><a href="#MinGW的安装以及在codeblocks中的设置" class="headerlink" title="MinGW的安装以及在codeblocks中的设置"></a>MinGW的安装以及在codeblocks中的设置</h1><p>本文参考资料：</p>
+        <h1 id="MinGW的安装以及在codeblocks中的设置"><a href="#MinGW的安装以及在codeblocks中的设置" class="headerlink" title="MinGW的安装以及在codeblocks中的设置"></a>MinGW的安装以及在codeblocks中的设置</h1><p>本文参考资料：</p>
 <ul>
 <li><a href="http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html" target="_blank" rel="external">http://jingyan.baidu.com/article/455a99509c76d8a1662778f6.html</a></li>
 </ul>
@@ -297,16 +326,19 @@
 <h3 id="配置环境变量并验证"><a href="#配置环境变量并验证" class="headerlink" title=" 配置环境变量并验证 "></a><strong> 配置环境变量并验证 </strong></h3><p>把MinGW安装目录的bin目录添加到环境变量中。<br>添加之后，在cmd中输入 gcc –v。如果出现以下画面，则说明安装成功。<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-03.PNG&amp;fhash=c762bfd36439e7b8ecb6aa54faff5a22ac95f4ad&amp;dt=40.e7f18eead4a10ae686bac843ab826ae7&amp;v=1.0.1&amp;rtick=14674589023094&amp;open_app_id=0&amp;devtype=web&amp;sign=8b9d2def18f376d3cede5e97408f62c8&amp;" alt=""></p>
 <h3 id="在CodeBlocks中配置编译器和调试器"><a href="#在CodeBlocks中配置编译器和调试器" class="headerlink" title=" 在CodeBlocks中配置编译器和调试器 "></a><strong> 在CodeBlocks中配置编译器和调试器 </strong></h3><p>配置编译器：settings，complier。<br>选中GNU GCC Complier，Reset Defaults。这样一般即可自动检测出MinGW的安装目录。<br>如果没有检测出来，可以继续点击下面的 Auto Detect。<br>还没检测出来的话，那我们就手动进行配置<br><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E5%9B%BE%E7%89%87%2F10-%E5%8D%9A%E5%AE%A2%2F16%2F07%2F02%2Fmingw%E7%9A%84%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E5%9C%A8codeblocks%E4%B8%AD%E7%9A%84%E8%AE%BE%E7%BD%AE-04.PNG&amp;fhash=38dd8137fa6c4608f6bd804cefd241ecb360272e&amp;dt=40.e7a156bf9d513d801bf333529266ce24&amp;v=1.0.1&amp;rtick=14674589028037&amp;open_app_id=0&amp;devtype=web&amp;sign=b13ac3c5517e3166b1256cbe27d1fa3e&amp;" alt=""></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -314,235 +346,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/06/19/5分钟搭建个人博客/" rel="next" title="在GitHub上利用Hexo搭建个人博客">
+                <i class="fa fa-chevron-left"></i> 在GitHub上利用Hexo搭建个人博客
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/06/19/5分钟搭建个人博客/" itemprop="url">
-                  在GitHub上利用Hexo搭建个人博客
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-19T01:52:37+08:00" content="2016-06-19">
-              2016-06-19
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>原文来自：<a href="http://www.jianshu.com/p/4eaddcbe4d12" target="_blank" rel="external">http://www.jianshu.com/p/4eaddcbe4d12</a></p>
-<p>本文是在对原文提供的步骤实践成功之后，做一下总结和梳理。</p>
-<h2 id="整体的思路和流程"><a href="#整体的思路和流程" class="headerlink" title=" 整体的思路和流程 "></a><strong> 整体的思路和流程 </strong></h2><ol>
-<li>创建 Github 域名和空间</li>
-<li>安装博客框架 Hexo</li>
-<li>对博客的初始化和自定义配置</li>
-<li>写文章、发布和访问</li>
-</ol>
-<h2 id="用到的工具汇总"><a href="#用到的工具汇总" class="headerlink" title=" 用到的工具汇总 "></a><strong> 用到的工具汇总 </strong></h2><ol>
-<li>全世界最大的同性交友网站 <a href="https://github.com/" target="_blank" rel="external">GitHub</a></li>
-<li>版本控制工具 <a href="https://git-scm.com/" target="_blank" rel="external">Git</a></li>
-<li>Node.js的版本管理工具 nvm</li>
-<li>Node.js</li>
-</ol>
-<h2 id="详细步骤"><a href="#详细步骤" class="headerlink" title=" 详细步骤 "></a><strong> 详细步骤 </strong></h2><h3 id="注册GitHub域名和空间"><a href="#注册GitHub域名和空间" class="headerlink" title=" 注册GitHub域名和空间 "></a><strong> 注册GitHub域名和空间 </strong></h3><h3 id="依次安装Git，Nodejs，Hexo"><a href="#依次安装Git，Nodejs，Hexo" class="headerlink" title=" 依次安装Git，Nodejs，Hexo "></a><strong> 依次安装Git，Nodejs，Hexo </strong></h3><h3 id="编写和发布"><a href="#编写和发布" class="headerlink" title=" 编写和发布 "></a><strong> 编写和发布 </strong></h3><h4 id="写文章"><a href="#写文章" class="headerlink" title=" 写文章 "></a><strong> 写文章 </strong></h4><p>在username.github.io/source/_posts下，执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<h4 id="测试"><a href="#测试" class="headerlink" title=" 测试 "></a><strong> 测试 </strong></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-<p>测试服务启动，你可以在浏览器中输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 预览。</p>
-<h4 id="发布"><a href="#发布" class="headerlink" title=" 发布 "></a><strong> 发布 </strong></h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-<h3 id="访问"><a href="#访问" class="headerlink" title=" 访问 "></a><strong> 访问 </strong></h3><p>在浏览器中输入 <a href="http://wildreamer.github.io/" target="_blank" rel="external">http://wildreamer.github.io/</a> 就可以访问了。</p>
-<p><img src="http://dl40.yunpan.360.cn/intf.php?method=Preview.outputPic&amp;qid=37674786&amp;fname=%2F%E6%89%8B%E6%9C%BA%E5%9B%BE%E7%89%87%E5%A4%87%E4%BB%BD0622%2FIMG_20160624_181940.jpg&amp;fhash=fd949d81eb2a11723a036726e54500027ea22119&amp;dt=40.2d830b8baeb5762ba78ce83d29783c64&amp;v=1.0.1&amp;rtick=14671268359592&amp;open_app_id=0&amp;devtype=web&amp;sign=988be620eee2b71ab0afe57b8c1b8858&amp;" alt="图片"></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/06/11/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-11T12:55:45+08:00" content="2016-06-11">
-              2016-06-11
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -550,6 +379,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -569,8 +402,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -613,6 +455,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MinGW的安装以及在codeblocks中的设置"><span class="nav-number">1.</span> <span class="nav-text">MinGW的安装以及在codeblocks中的设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整体的思路和流程"><span class="nav-number">1.1.</span> <span class="nav-text"> 整体的思路和流程 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#详细步骤"><span class="nav-number">1.2.</span> <span class="nav-text"> 详细步骤 </span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装MinGW"><span class="nav-number">1.2.1.</span> <span class="nav-text"> 安装MinGW </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置环境变量并验证"><span class="nav-number">1.2.2.</span> <span class="nav-text"> 配置环境变量并验证 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在CodeBlocks中配置编译器和调试器"><span class="nav-number">1.2.3.</span> <span class="nav-text"> 在CodeBlocks中配置编译器和调试器 </span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -709,6 +562,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
